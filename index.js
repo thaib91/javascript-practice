@@ -50,3 +50,16 @@ function reverseWords(str) {
     return str.join(' ') //joins it to make it a string
 }
 
+
+//Alphabatize an array.
+const alphabetize = (word) => {
+    if (!word) {
+        return;
+    }
+    word = word.split('');
+    word = word.sort();
+    word = word.join('');
+    return word;
+}
+
+const words = ['map', 'art', 'how', 'rat', 'tar', 'who', 'pam', 'shoop'];
