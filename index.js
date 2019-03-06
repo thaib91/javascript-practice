@@ -164,3 +164,22 @@ function bubble_Sort(a)
 }
 
 console.log(bubble_Sort([12, 345, 4, 546, 122, 84, 98, 64, 9, 1, 3223, 455, 23, 234, 213]));
+
+//binary search tree traversal breadth-first:
+BinarySearchTree.prototype.traverseBreadthFirst = function (func) {
+  let queue = [this];
+  
+  while (queue.length) {
+    let currentNode = queue.shift();
+    
+    if (currentNode.left) {
+      queue.push(currentNode.left)
+    }
+    
+    if (currentNode.right) {
+      queue.push(currentNode.right)
+    }
+    
+    func(currentNode.value)
+  }
+};
