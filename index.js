@@ -223,3 +223,17 @@ function merge (left, right) {
 }
 
 const list = [2, 5, 1, 3, 7, 2, 3, 8, 6, 3]
+
+//Palindrome 
+const isPalindrome = (x) => {
+  const string = x.toString().split('').join('')
+  const reverse = x.toString().split('').reverse().join('')
+  console.log(reverse)
+  if(string === reverse){
+      return true;
+  }else {
+      return false;
+  }
+}
+
+isPalindrome(121)
