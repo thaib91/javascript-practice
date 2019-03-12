@@ -285,3 +285,6 @@ function vowelsAndConsonants(s) {
 }
 
 vowelsAndConsonants('javascript')
+
+//factorial 1 line arrow function with recursion:
+const factorial = (n) => (n <= 0 ? 1 : n * factorial(n-1))
